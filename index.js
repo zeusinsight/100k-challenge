@@ -113,7 +113,7 @@ function formatValues(array) {
 }
 
 function generateMillionDollarGrid(data) {
-    const totalSquares = 1000;
+    const totalSquares = 100;
     const squaresData = new Array(totalSquares).fill(null);
     const categoryColors = Object.fromEntries(
         data.map((item) => [item.category.name, item.category.color])
