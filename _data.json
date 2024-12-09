@@ -1,0 +1,20 @@
+{
+    "categories": {
+        "project_1": {
+            "name": "XBlockBot",
+            "color": "bg-purple-500",
+            "link": "https://xblockbot.com"
+        },
+        "project_2": {
+            "name": "Dev Agency",
+            "color": "bg-blue-500",
+            "link": "https://zeusinlabs.com"
+        }
+    },
+    "revenue": [
+        { "value": 518, "category": "project_1", "date": "2024-10-14" },
+        { "value": 488, "category": "project_1", "date": "2024-12-09" },
+        { "value": 150, "category": "project_2", "date": "2024-10-17" },
+        { "value": 1695, "category": "project_2", "date": "2024-10-18" }
+    ]
+}
