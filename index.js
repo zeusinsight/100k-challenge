@@ -80,11 +80,11 @@ function formatValues(array) {
 
     array.forEach((item, index) => {
         let value = item.value + carryOver;
-        carryOver = value % 1000;
-        let squares = Math.floor(value / 1000);
+        carryOver = value % 100;
+        let squares = Math.floor(value / 100);
 
         if (squares > 0) {
-            result.push({ value: squares * 1000, category: item.category });
+            result.push({ value: squares * 100, category: item.category });
         }
 
         if (carryOver > 0) {
@@ -97,10 +97,10 @@ function formatValues(array) {
         (sum, value) => sum + value,
         0
     );
-    if (totalExtraCarryOver >= 1000) {
-        const extraSquares = Math.floor(totalExtraCarryOver / 1000);
+    if (totalExtraCarryOver >= 100) {
+        const extraSquares = Math.floor(totalExtraCarryOver / 100);
         result.push({
-            value: extraSquares * 1000,
+            value: extraSquares * 100,
             category: {
                 name: "Combined",
                 color: "bg-pink-500",
@@ -113,7 +113,7 @@ function formatValues(array) {
 }
 
 function generateMillionDollarGrid(data) {
-    const totalSquares = 100;
+    const totalSquares = 100; // Now represents $10,000 total (100 squares × $100)
     const squaresData = new Array(totalSquares).fill(null);
     const categoryColors = Object.fromEntries(
         data.map((item) => [item.category.name, item.category.color])
@@ -121,7 +121,7 @@ function generateMillionDollarGrid(data) {
 
     let currentIndex = 0;
     data.forEach((item) => {
-        const squaresCount = Math.floor(item.value / 1000);
+        const squaresCount = Math.floor(item.value / 100);
         for (let i = 0; i < squaresCount && currentIndex < totalSquares; i++) {
             squaresData[currentIndex] = item.category;
             currentIndex++;
