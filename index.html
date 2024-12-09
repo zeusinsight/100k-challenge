@@ -1,143 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Million Dollar Grid</title>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-        <script src="https://cdn.tailwindcss.com"></script>
-        <script>
-            tailwind.config = {
-                theme: {
-                    extend: {
-                        fontFamily: {
-                            'sans': ['Inter', 'ui-sans-serif', 'system-ui', '-apple-system', 'BlinkMacSystemFont', "Segoe UI", 'Roboto', "Helvetica Neue", 'Arial', "Noto Sans", 'sans-serif', "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"]
-                        },
-                        gridTemplateColumns: {
-                            20: "repeat(20, minmax(0, 1fr))",
-                            40: "repeat(40, minmax(0, 1fr))",
-                        },
-                        animation: {
-                            "scale-in": "scaleIn 0.5s ease-out forwards",
-                        },
-                        keyframes: {
-                            scaleIn: {
-                                "0%": { transform: "scale(0)" },
-                                "100%": { transform: "scale(1)" },
-                            },
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- OpenGraph Meta Tags -->
+    <meta property="og:title" content="My $100,000 Grid" />
+    <meta property="og:description"
+        content="Track my journey to $100,000 with this visual grid where each square represents $1,000 of progress." />
+    <meta property="og:image" content="./og.png" />
+    <meta property="og:type" content="website" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <title>Million Dollar Grid</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'sans': ['Inter', 'ui-sans-serif', 'system-ui', '-apple-system', 'BlinkMacSystemFont', "Segoe UI", 'Roboto', "Helvetica Neue", 'Arial', "Noto Sans", 'sans-serif', "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"]
+                    },
+                    gridTemplateColumns: {
+                        20: "repeat(20, minmax(0, 1fr))",
+                        40: "repeat(40, minmax(0, 1fr))",
+                    },
+                    animation: {
+                        "scale-in": "scaleIn 0.5s ease-out forwards",
+                    },
+                    keyframes: {
+                        scaleIn: {
+                            "0%": { transform: "scale(0)" },
+                            "100%": { transform: "scale(1)" },
                         },
                     },
                 },
-            };
-        </script>
-    </head>
-    <body class="bg-[#161616] text-white">
-        <div class="w-full bg-black/40 backdrop-blur-sm border-b border-white/5">
-            <div class="max-w-7xl mx-auto">
-                <a href="https://zeusinlabs.com" 
-                   target="_blank" 
-                   class="flex flex-col md:flex-row items-center justify-between py-3 px-4 md:py-4 md:px-6 space-y-2 md:space-y-0">
-                    <div class="flex items-center space-x-2">
-                        <div class="bg-purple-400/10 text-purple-400 rounded-full px-4 py-1.5 text-sm font-medium inline-flex items-center">
-                            <span class="hidden md:inline">MVP Development in 2-3 weeks</span>
-                            <span class="md:hidden">MVP in 2-3 weeks</span>
-                            <span class="ml-1">→</span>
-                        </div>
+            },
+        };
+    </script>
+</head>
+
+<body class="bg-[#161616] text-white">
+    <div class="w-full bg-black/40 backdrop-blur-sm border-b border-white/5">
+        <div class="max-w-7xl mx-auto">
+            <a href="https://zeusinlabs.com" target="_blank"
+                class="flex flex-col md:flex-row items-center justify-between py-3 px-4 md:py-4 md:px-6 space-y-2 md:space-y-0">
+                <div class="flex items-center space-x-2">
+                    <div
+                        class="bg-purple-400/10 text-purple-400 rounded-full px-4 py-1.5 text-sm font-medium inline-flex items-center">
+                        <span class="hidden md:inline">MVP Development in 2-3 weeks</span>
+                        <span class="md:hidden">MVP in 2-3 weeks</span>
+                        <span class="ml-1">→</span>
                     </div>
-                    <div class="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-3">
-                        <span class="text-sm text-gray-400 text-center md:text-left">Get your personalized MVP and launch in 2-3 weeks</span>
-                        <button class="bg-white/10 hover:bg-white/20 transition-all duration-200 rounded-full px-4 py-1.5 text-sm font-medium whitespace-nowrap">
-                            Visit →
-                        </button>
-                    </div>
-                </a>
+                </div>
+                <div class="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-3">
+                    <span class="text-sm text-gray-400 text-center md:text-left">Get your personalized MVP and launch in
+                        2-3 weeks</span>
+                    <button
+                        class="bg-white/10 hover:bg-white/20 transition-all duration-200 rounded-full px-4 py-1.5 text-sm font-medium whitespace-nowrap">
+                        Visit →
+                    </button>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <main class="container max-w-[788px] mx-auto p-4 py-12">
+        <h1 class="animate text-3xl text-center font-bold mb-4 show">
+            <img src="https://pbs.twimg.com/profile_images/1835668187964153856/ILm9T1Ds_400x400.jpg" alt="Logo"
+                class="inline-block w-10 h-10 mr-2 rounded-full"> My $100,000 Grid
+        </h1>
+        <p class="animate text-lg mb-6 text-center show">
+            For my $100,000 challenge, each square represents
+            <a class="font-semibold text-purple-600 dark:text-purple-400 hover:underline">$1,000</a>
+
+        </p>
+
+        <div id="million-dollar-grid" class="grid grid-cols-20 md:grid-cols-40 gap-[0.25rem]">
+            <!-- Pastel color classes for grid squares -->
+            <style>
+                #million-dollar-grid>div {
+                    width: 13.5px;
+                    height: 13.5px;
+                }
+
+                .pastel-1 {
+                    background-color: #FFD1DC;
+                }
+
+                /* Pastel Pink */
+                .pastel-2 {
+                    background-color: #FFEBCD;
+                }
+
+                /* Pastel Peach */
+                .pastel-3 {
+                    background-color: #E6E6FA;
+                }
+
+                /* Pastel Lavender */
+                .pastel-4 {
+                    background-color: #98FB98;
+                }
+
+                /* Pastel Green */
+                .pastel-5 {
+                    background-color: #87CEFA;
+                }
+
+                /* Pastel Blue */
+
+                /* Empty squares background color */
+                #million-dollar-grid a:not([href]) {
+                    background-color: #1f1f1f;
+                }
+            </style>
+        </div>
+
+        <div
+            class="flex flex-col sm:flex-row justify-between text-gray-400 mb-8 px-0 text-sm sm:text-[15px] space-y-4 sm:space-y-0">
+            <div id="time-remaining" class="flex flex-col sm:block mt-4 text-center">
+                <strong class="dark:text-gray-200 mb-1 sm:mb-0">Time Remaining:</strong>
+                <span class="text-gray-400">Calculating...</span>
+            </div>
+            <div id="last-updated" class="flex flex-col sm:block text-center sm:text-right">
+                <span class="inline-block w-3 h-3 bg-green-500 rounded-full mr-2 animate-pulse"></span>
+                <strong class="dark:text-gray-200">Update:</strong> Just now
             </div>
         </div>
 
-        <main class="container max-w-[788px] mx-auto p-4 py-12">
-            <h1 class="animate text-3xl text-center font-bold mb-4 show">
-             <img src="https://pbs.twimg.com/profile_images/1835668187964153856/ILm9T1Ds_400x400.jpg" alt="Logo" class="inline-block w-10 h-10 mr-2 rounded-full">   My $100,000 Grid
-            </h1>
-            <p class="animate text-lg mb-6 text-center show">
-                For my $100,000 challenge, each square represents
-                <a class="font-semibold text-purple-600 dark:text-purple-400 hover:underline">$1,000</a>
-                
-                </p>
-            
-            <div
-                id="million-dollar-grid"
-                class="grid grid-cols-20 md:grid-cols-40 gap-[0.25rem]"
-            >
-                <!-- Pastel color classes for grid squares -->
-                <style>
-                    #million-dollar-grid > div {
-                        width: 13.5px;
-                        height: 13.5px;
-                    }
-                    .pastel-1 { background-color: #FFD1DC; } /* Pastel Pink */
-                    .pastel-2 { background-color: #FFEBCD; } /* Pastel Peach */
-                    .pastel-3 { background-color: #E6E6FA; } /* Pastel Lavender */
-                    .pastel-4 { background-color: #98FB98; } /* Pastel Green */
-                    .pastel-5 { background-color: #87CEFA; } /* Pastel Blue */
-                    
-                    /* Empty squares background color */
-                    #million-dollar-grid a:not([href]) {
-                        background-color: #1f1f1f;
-                    }
-                </style>
-            </div>
+        <h2 class="text-4xl font-semibold text-center mb-8">
+            Revenue Breakdown
+        </h2>
+        <div id="revenue-breakdown"></div>
+    </main>
 
-            <div class="flex flex-col sm:flex-row justify-between text-gray-400 mb-8 px-0 text-sm sm:text-[15px] space-y-4 sm:space-y-0">
-                <div id="time-remaining" class="flex flex-col sm:block mt-4 text-center">
-                    <strong class="dark:text-gray-200 mb-1 sm:mb-0">Time Remaining:</strong> 
-                    <span class="text-gray-400">Calculating...</span>
-                </div>
-                <div id="last-updated" class="flex flex-col sm:block text-center sm:text-right">
-                    <span class="inline-block w-3 h-3 bg-green-500 rounded-full mr-2 animate-pulse"></span>
-                    <strong class="dark:text-gray-200">Update:</strong> Just now
-                </div>
-            </div>
+    <script src="index.js"></script>
+    <script>
+        window.incomeData = {
+            goal: 100000,
+            startDate: new Date('2025-01-01'),
+            endDate: new Date('2025-12-31'),
+            lastUpdated: new Date()
+        };
 
-            <h2 class="text-4xl font-semibold text-center mb-8">
-                Revenue Breakdown
-            </h2>
-            <div id="revenue-breakdown"></div>
-        </main>
+        function updateTimeRemaining() {
+            const now = new Date();
+            const endDate = new Date('2025-12-31');
+            const timeRemaining = endDate - now;
 
-        <script src="index.js"></script>
-        <script>
-            window.incomeData = {
-                goal: 100000,
-                startDate: new Date('2025-01-01'),
-                endDate: new Date('2025-12-31'),
-                lastUpdated: new Date()
-            };
+            const months = Math.floor(timeRemaining / (1000 * 60 * 60 * 24 * 30));
+            const days = Math.floor((timeRemaining % (1000 * 60 * 60 * 24 * 30)) / (1000 * 60 * 60 * 24));
 
-            function updateTimeRemaining() {
-                const now = new Date();
-                const endDate = new Date('2025-12-31');
-                const timeRemaining = endDate - now;
+            const timeRemainingElement = document.getElementById('time-remaining');
+            const strongElement = timeRemainingElement.querySelector('strong');
 
-                const months = Math.floor(timeRemaining / (1000 * 60 * 60 * 24 * 30));
-                const days = Math.floor((timeRemaining % (1000 * 60 * 60 * 24 * 30)) / (1000 * 60 * 60 * 24));
-
-                const timeRemainingElement = document.getElementById('time-remaining');
-                const strongElement = timeRemainingElement.querySelector('strong');
-                
-                // Update only the text after the strong element
-                timeRemainingElement.innerHTML = 
-                    `<strong class="dark:text-gray-200 mt-4">Time Remaining:</strong> ${months} months, ${days} days`;
-            }
+            // Update only the text after the strong element
+            timeRemainingElement.innerHTML =
+                `<strong class="dark:text-gray-200 mt-4">Time Remaining:</strong> ${months} months, ${days} days`;
+        }
 
 
-            // Update on page load
-            updateTimeRemaining();
-            updateLastUpdated();
+        // Update on page load
+        updateTimeRemaining();
+        updateLastUpdated();
 
-            // Update time remaining every minute
-            setInterval(updateTimeRemaining, 60000);
-            // Update last updated every 30 seconds
-            setInterval(updateLastUpdated, 30000);
-        </script>
-    </body>
+        // Update time remaining every minute
+        setInterval(updateTimeRemaining, 60000);
+        // Update last updated every 30 seconds
+        setInterval(updateLastUpdated, 30000);
+    </script>
+</body>
+
 </html>
