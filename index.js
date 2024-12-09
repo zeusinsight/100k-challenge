@@ -113,7 +113,7 @@ function formatValues(array) {
 }
 
 function generateMillionDollarGrid(data) {
-    const totalSquares = 100; // Now represents $10,000 total (100 squares × $100)
+    const totalSquares = 1000; // Now represents $10,000 total (100 squares × $100)
     const squaresData = new Array(totalSquares).fill(null);
     const categoryColors = Object.fromEntries(
         data.map((item) => [item.category.name, item.category.color])
