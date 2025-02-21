@@ -39,12 +39,9 @@
             },
         };
     </script>
-    <script
-    defer
-    data-website-id="67b8c28e1880d9673f4953ba"
-    data-domain="challenge.zeusinlabs.com"
-    src="https://datafa.st/js/script.js">
-  </script>
+    <script defer data-website-id="5b673397-7ae8-45bc-b741-295cbd6ed0e2" data-domain="challenge.zeusinlabs.com"
+        src="https://easy-data.vercel.app/script.js"></script>
+
 </head>
 
 <body class="bg-[#161616] text-white">
@@ -144,6 +141,30 @@
 
     <script src="index.js"></script>
     <script>
+        function waitForEasyData(callback, maxAttempts = 50) {
+            let attempts = 0;
+            const checkEasyData = () => {
+                attempts++;
+                if (window.easydata) {
+                    callback();
+                } else if (attempts < maxAttempts) {
+                    setTimeout(checkEasyData, 100);
+                } else {
+                    console.error('EasyData failed to initialize');
+                }
+            };
+            checkEasyData();
+        }
+
+        // Wait for easydata to be ready before tracking events
+        waitForEasyData(() => {
+            window.easydata.trackEvent('button_click', {
+                buttonId: 'signup',
+                buttonText: 'Sign Up Now'
+            });
+        });
+    </script>
+    <script>
         window.incomeData = {
             goal: 100000,
             startDate: new Date('2025-01-01'),
@@ -182,12 +203,7 @@
         data-cf-beacon='{"token": "3d7c4eb6e4594790ba535b9c54751fca"}'></script>
     <!-- End Cloudflare Web Analytics -->
     <!-- EasyData Analytics -->
-    <script 
-        defer 
-        data-website-id="5b673397-7ae8-45bc-b741-295cbd6ed0e2" 
-        data-domain="challenge.zeusinlabs.com"
-        src="https://easy-data.vercel.app/script.js"
-    ></script>
+
 </body>
 
 </html>
