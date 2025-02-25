@@ -158,8 +158,7 @@
 
         // Wait for easydata to be ready before tracking events
         waitForEasyData(() => {
-            window.easydata.trackEvent('button_click', {
-                buttonId: 'signup',
+            window.easydata('button_click', {
                 buttonText: 'Sign Up Now'
             });
         });
