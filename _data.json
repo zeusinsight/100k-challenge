@@ -21,7 +21,8 @@
         { "value": 458, "category": "project_2", "date": "2025-01-15" },
         { "value": 300, "category": "project_1", "date": "2025-01-20" },
         { "value": 229, "category": "project_2", "date": "2025-02-03" },
-        { "value": 850, "category": "project_2", "date": "2025-02-12" }
+        { "value": 850, "category": "project_2", "date": "2025-02-12" },
+        { "value": 3150, "category": "project_2", "date": "2025-04-18" }
 
     ]
 }
