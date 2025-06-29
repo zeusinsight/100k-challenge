@@ -29,7 +29,6 @@
       { "value": 0.45,    "category": "other",     "date": "2025-02-02" },
       { "value": 229.95,  "category": "project_2", "date": "2025-02-03" },
       { "value": 194.99,  "category": "project_1", "date": "2025-02-21" },
-      { "value": 0.01,    "category": "project_2", "date": "2025-02-22" },
       { "value": 805.04,  "category": "other",     "date": "2025-02-19" },
       { "value": 1391.80, "category": "other",     "date": "2025-02-24" },
       { "value": 2.46,    "category": "other",     "date": "2025-03-01" },
@@ -41,6 +40,8 @@
       { "value": 0.33,    "category": "other",     "date": "2025-06-01" },
       { "value": 485.80,  "category": "project_2", "date": "2025-06-03" },
       { "value": 291.40,  "category": "project_2", "date": "2025-06-11" },
+      { "value": 145.20,  "category": "project_2", "date": "2025-06-28" },
       { "value": 33.78,   "category": "other",     "date": "2025-06-29" }
     ]
-}
+  }
+  
