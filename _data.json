@@ -9,44 +9,38 @@
         "name": "Dev Agency",
         "color": "bg-blue-500",
         "link": "https://zeusinlabs.com"
+      },
+      "other": {
+        "name": "Autres",
+        "color": "bg-gray-500",
+        "link": ""
       }
     },
     "revenue": [
-      { "value": 518,     "category": "project_1", "date": "2024-10-14" },
-      { "value": 150,     "category": "project_2", "date": "2024-10-17" },
-      { "value": 1695,    "category": "project_2", "date": "2024-10-18" },
-      { "value": 488,     "category": "project_1", "date": "2024-12-09" },
-      { "value": 477.49,  "category": "project_2", "date": "2024-12-09" },
-      { "value": 30,      "category": "project_2", "date": "2024-12-12" },
+      { "value": 477.49,  "category": "project_1", "date": "2024-12-09" },
       { "value": 0.01,    "category": "project_2", "date": "2024-12-13" },
       { "value": 30.00,   "category": "project_2", "date": "2024-12-13" },
       { "value": 148.50,  "category": "project_2", "date": "2024-12-16" },
-      { "value": 734,     "category": "project_2", "date": "2024-12-28" },
       { "value": 734.37,  "category": "project_2", "date": "2024-12-31" },
       { "value": 1693.50, "category": "project_2", "date": "2025-01-08" },
-      { "value": 458,     "category": "project_2", "date": "2025-01-15" },
       { "value": 910.55,  "category": "project_2", "date": "2025-01-15" },
-      { "value": 300,     "category": "project_1", "date": "2025-01-20" },
-      { "value": 300.99,  "category": "project_2", "date": "2025-01-21" },
+      { "value": 300.99,  "category": "project_1", "date": "2025-01-21" },
       { "value": 459.91,  "category": "project_2", "date": "2025-02-01" },
-      { "value": 229,     "category": "project_2", "date": "2025-02-03" },
+      { "value": 0.45,    "category": "other",     "date": "2025-02-02" },
       { "value": 229.95,  "category": "project_2", "date": "2025-02-03" },
-      { "value": 850,     "category": "project_2", "date": "2025-02-12" },
-      { "value": 236.68,  "category": "project_2", "date": "2025-02-13" },
-      { "value": 194.99,  "category": "project_2", "date": "2025-02-21" },
+      { "value": 194.99,  "category": "project_1", "date": "2025-02-21" },
       { "value": 0.01,    "category": "project_2", "date": "2025-02-22" },
-      { "value": 485.80,  "category": "project_2", "date": "2025-03-21" },
-      { "value": 133,     "category": "project_1", "date": "2025-04-10" },
-      { "value": 0.01,    "category": "project_2", "date": "2025-04-15" },
-      { "value": 3150,    "category": "project_2", "date": "2025-04-18" },
+      { "value": 805.04,  "category": "other",     "date": "2025-02-19" },
+      { "value": 1391.80, "category": "other",     "date": "2025-02-24" },
+      { "value": 2.46,    "category": "other",     "date": "2025-03-01" },
+      { "value": 0.26,    "category": "other",     "date": "2025-03-01" },
+      { "value": 3150.00, "category": "project_2", "date": "2025-03-03" },
       { "value": 1648.50, "category": "project_2", "date": "2025-04-28" },
-      { "value": 540.00,  "category": "project_2", "date": "2025-04-29" },
+      { "value": 3.66,    "category": "other",     "date": "2025-05-01" },
       { "value": 9.83,    "category": "project_2", "date": "2025-05-08" },
+      { "value": 0.33,    "category": "other",     "date": "2025-06-01" },
       { "value": 485.80,  "category": "project_2", "date": "2025-06-03" },
-      { "value": 303.22,  "category": "project_2", "date": "2025-06-06" },
-      { "value": 1000.00, "category": "project_2", "date": "2025-06-08" },
       { "value": 291.40,  "category": "project_2", "date": "2025-06-11" },
-      { "value": 145.20,  "category": "project_2", "date": "2025-06-28" }
+      { "value": 33.78,   "category": "other",     "date": "2025-06-29" }
     ]
-  }
-  
+}
